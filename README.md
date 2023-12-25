@@ -1,0 +1,2 @@
+# Dreamscape Gardens
+ MOCK WEBSITE: "Welcome to Dreamscape Gardens, the pinnacle of garden beautification and landscaping artistry. At Dreamscape Gardens, we believe that every outdoor space holds the potential to be a stunning oasis of beauty and tranquility. Our mission is to transform your garden into a living masterpiece, a harmonious blend of nature and design that resonates with your personal aesthetic and lifestyle."
