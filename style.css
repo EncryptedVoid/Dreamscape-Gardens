@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #0096c7;
+  --accent-color: #48cae4;
+  --button-color: #24a5dd;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+/* Remove default text decorations */
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+.nav_chamber {
+  margin: 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw; /* Set the width to 80% of the viewport width */
+  background-color: #fff; /* Or your preferred color */
+  z-index: 1000; /* Ensure navbar is on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for styling */
+  border-radius: 2rem;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: center; /* Center items in the navbar */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 5rem;
+  width: 100%; /* Ensure the list takes full width of the navbar */
+}
+
+.nav_dir {
+  flex: 1; /* Distribute space equally among items */
+  text-align: center; /* Center text in each nav item */
+  padding: 0.5rem; /* Adjust padding as needed */
+  border-radius: 1rem;
+  margin: 0.65rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease; /* Transition effect */
+}
+
+.nav_dir button {
+  background: none;
+  border: none;
+  width: 100%; /* Make the button fill the nav item */
+  height: 100%; /* Make the button fill the nav item */
+  font-size: inherit; /* Inherit font size from parent */
+  color: inherit; /* Inherit text color from parent */
+  cursor: pointer; /* Change mouse cursor to pointer */
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 1.25rem;
+  border: 0.25rem solid var(--button-color);
+}
+
+.nav_bar .active_page button {
+  background-color: var(--secondary-color);
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.nav_dir button:hover {
+  border: 0.25rem solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: 600;
+}
